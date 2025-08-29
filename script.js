@@ -41,6 +41,7 @@ cards.forEach(card => {
 
    
     const template = historyContainer.querySelector('.history-content').cloneNode(true);
+    template.classList.add('bg-gray-50');
     template.querySelector('.service-name').textContent = helpText.textContent;
     template.querySelector('.service-number').textContent = helpNumber.textContent;
     template.querySelector('.call-time').textContent = time;
